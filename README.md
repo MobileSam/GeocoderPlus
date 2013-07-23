@@ -46,6 +46,13 @@ GeocoderPlus supports region biasing, which gives priority to certain results ba
 
 To enable regions biasing, use the setter `Geocoder.setUseRegionBias()`.
 
+#### Bounds influencing
+
+GeocoderPlus supports bounds biasing, which gives priority to certain results based on the bounding box of the viewport. This will only influence, not fully restrict, results from the geocoder
+
+To enable bounds biasing, use the setter `Geocoder.setBounds(double northeastLatitude, double northeastLongitude, double southWestLatitude,
+            double southWestLongitude)`.
+
 Copyright
 ---------
 Copyright 2011 Bricolsoft Consulting
